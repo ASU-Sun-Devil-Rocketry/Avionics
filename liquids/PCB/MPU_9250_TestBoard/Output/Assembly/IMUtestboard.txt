@@ -1,0 +1,5 @@
+Partlist exported from C:/Users/colto/OneDrive/Documents/EAGLE/projects/IMU Testing Board/IMUtestboard.sch at 3/5/2021 9:59 PM
+
+Qty Value Device       Package      Parts         Description       MF MPN OC_FARNELL OC_NEWARK POPULARITY
+1         ARDUINO_NANO ARDUINO_NANO ARDUINO_NANO1 Arduino Nano V3.0                                       
+1         MA10-1       MA10-1       MPU-6050      PIN HEADER               unknown    unknown   4         

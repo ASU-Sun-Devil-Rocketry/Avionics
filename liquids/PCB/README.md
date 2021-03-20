@@ -13,4 +13,5 @@ Working Directory Structure:
    sim: simulation files 
 
    CAD: 3D CAD models
-
+  
+   img: Images of Circuit/Footprints for github display

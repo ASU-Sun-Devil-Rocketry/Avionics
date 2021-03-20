@@ -14,3 +14,4 @@ Working Directory Structure:
 
    CAD: 3D CAD models
 
+   img: Images of circuits or footprints to display on github page

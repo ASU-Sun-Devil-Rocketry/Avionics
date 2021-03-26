@@ -10,4 +10,3 @@ This is a repository all SDR Avionics software and PCB files. Current Projects i
      
 Files related to the flight computer and ground station can be found in the general directory. Strand Burner files can be found in the solids directory, and liquid propulsion files can be found in the liquids folder.  
 
-Test

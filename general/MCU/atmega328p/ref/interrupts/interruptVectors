@@ -1,0 +1,7 @@
+Interrupt Vectors for AVR microcontrollers are given below:
+
+Pin-change interrupts:
+PCINT0 --> PCINT0_vect --> B pins PB0-PB7
+PCINT1 --> PCINT1_vect --> C pins PC0-PC6
+PCINT2 --> PCINT2_vect --> C pins PD0-PD7
+

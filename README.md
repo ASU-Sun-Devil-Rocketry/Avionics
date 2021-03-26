@@ -2,6 +2,6 @@
 
 This is a repository all SDR Avionics software. Current Projects include:
 <ul>
-<item>General Purpose Flight Computer<\item>
-<item>Ground Station Launch System</item>
+<li>General Purpose Flight Computer<\li>
+<li>Ground Station Launch System</li>
 </ul>

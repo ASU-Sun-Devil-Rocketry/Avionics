@@ -1,6 +1,6 @@
 <h1>Sun Devil Rocketry Avionics</h1>
 
-This is a repository all SDR Avionics software and PCB files. Current Projects include:
+This is a repository for all SDR Avionics software and PCB files. Current Projects include:
 <ul>
    <li>General Purpose Flight Computer</li>
    <li>Ground Station Launch System</li>

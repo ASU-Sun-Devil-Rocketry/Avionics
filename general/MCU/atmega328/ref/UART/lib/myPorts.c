@@ -10,10 +10,12 @@
 * Purpose: Library containing functions that parse byte data *
 *          to be entered to the port registers for easy      *
 *          reuse                                             * 
-*                                                            * * Usage: copy library into working directory of project and  *
+*                                                            * 
+*  Usage: copy library into working directory of project and *
 *        use the functions according to their descriptions   *
 *        given below                                         *
 *************************************************************/
+
 #include <avr/io.h>
 
 /* multiBlockPort: takes one byte of digital Output data and 

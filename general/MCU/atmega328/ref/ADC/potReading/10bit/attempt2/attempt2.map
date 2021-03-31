@@ -1,9 +1,9 @@
 Archive member included to satisfy reference by file (symbol)
 
 /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a(_udivmodqi4.o)
-                              /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o (__udivmodqi4)
+                              lib/USART.o (__udivmodqi4)
 /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a(_udivmodhi4.o)
-                              /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o (__udivmodhi4)
+                              lib/USART.o (__udivmodhi4)
 /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a(_exit.o)
                               /usr/lib/gcc/avr/10.2.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
 /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a(_copy_data.o)
@@ -38,27 +38,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 potRead.o
  .data          0x0000000000000000        0x0 potRead.o
  .bss           0x0000000000000000        0x0 potRead.o
- .text          0x0000000000000000        0x0 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .data          0x0000000000000000        0x0 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .bss           0x0000000000000000        0x0 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.receiveByte
-                0x0000000000000000        0xe /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.printString
-                0x0000000000000000       0x26 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.readString
-                0x0000000000000000       0x58 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.printByte
-                0x0000000000000000       0x32 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.printWord
-                0x0000000000000000       0x7e /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.printBinaryByte
-                0x0000000000000000       0x44 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.nibbleToHexCharacter
-                0x0000000000000000        0xc /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.printHexByte
-                0x0000000000000000       0x1e /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
- .text.getNumber
-                0x0000000000000000       0x46 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
  .text          0x0000000000000000        0x0 lib/binaryDebug.o
  .data          0x0000000000000000        0x0 lib/binaryDebug.o
  .bss           0x0000000000000000        0x0 lib/binaryDebug.o
@@ -74,6 +53,27 @@ Discarded input sections
  .text          0x0000000000000000        0x0 lib/myADC.o
  .data          0x0000000000000000        0x0 lib/myADC.o
  .bss           0x0000000000000000        0x0 lib/myADC.o
+ .text          0x0000000000000000        0x0 lib/USART.o
+ .data          0x0000000000000000        0x0 lib/USART.o
+ .bss           0x0000000000000000        0x0 lib/USART.o
+ .text.receiveByte
+                0x0000000000000000        0xe lib/USART.o
+ .text.printString
+                0x0000000000000000       0x26 lib/USART.o
+ .text.readString
+                0x0000000000000000       0x58 lib/USART.o
+ .text.printByte
+                0x0000000000000000       0x32 lib/USART.o
+ .text.printWord
+                0x0000000000000000       0x7e lib/USART.o
+ .text.printBinaryByte
+                0x0000000000000000       0x44 lib/USART.o
+ .text.nibbleToHexCharacter
+                0x0000000000000000        0xc lib/USART.o
+ .text.printHexByte
+                0x0000000000000000       0x1e lib/USART.o
+ .text.getNumber
+                0x0000000000000000       0x46 lib/USART.o
  .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a(_udivmodqi4.o)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a(_udivmodqi4.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a(_udivmodqi4.o)
@@ -247,9 +247,9 @@ Linker script and memory map
 Address of section .data set to 0x800100
 LOAD /usr/lib/gcc/avr/10.2.0/../../../../avr/lib/avr5/crtatmega328p.o
 LOAD potRead.o
-LOAD /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
 LOAD lib/binaryDebug.o
 LOAD lib/myADC.o
+LOAD lib/USART.o
 START GROUP
 LOAD /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a
 LOAD /usr/lib/gcc/avr/10.2.0/../../../../avr/lib/avr5/libm.a
@@ -442,15 +442,15 @@ END GROUP
  .text.startup.main
                 0x00000000000000a6       0x80 potRead.o
                 0x00000000000000a6                main
- .text.initUSART
-                0x0000000000000126       0x22 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
-                0x0000000000000126                initUSART
- .text.transmitByte
-                0x0000000000000148        0xe /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
-                0x0000000000000148                transmitByte
  .text.ADC_10bit
-                0x0000000000000156       0x1a lib/myADC.o
-                0x0000000000000156                ADC_10bit
+                0x0000000000000126       0x1a lib/myADC.o
+                0x0000000000000126                ADC_10bit
+ .text.initUSART
+                0x0000000000000140       0x22 lib/USART.o
+                0x0000000000000140                initUSART
+ .text.transmitByte
+                0x0000000000000162        0xe lib/USART.o
+                0x0000000000000162                transmitByte
                 0x0000000000000170                . = ALIGN (0x2)
  *(.fini9)
  .fini9         0x0000000000000170        0x0 /usr/lib/gcc/avr/10.2.0/avr5/libgcc.a(_exit.o)
@@ -507,7 +507,7 @@ END GROUP
 
 .noinit         0x0000000000800100        0x0
                 [!provide]                        PROVIDE (__noinit_start = .)
- *(.noinit*)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
                 [!provide]                        PROVIDE (__noinit_end = .)
                 0x0000000000800100                _end = .
                 [!provide]                        PROVIDE (__heap_start = .)
@@ -531,14 +531,14 @@ END GROUP
 .stab           0x0000000000000000      0x36c
  *(.stab)
  .stab          0x0000000000000000      0x150 potRead.o
- .stab          0x0000000000000150      0x12c /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
-                                        0x648 (size before relaxing)
- .stab          0x000000000000027c       0xf0 lib/myADC.o
+ .stab          0x0000000000000150       0xf0 lib/myADC.o
                                          0xfc (size before relaxing)
+ .stab          0x0000000000000240      0x12c lib/USART.o
+                                        0x648 (size before relaxing)
 
-.stabstr        0x0000000000000000      0x4ad
+.stabstr        0x0000000000000000      0x485
  *(.stabstr)
- .stabstr       0x0000000000000000      0x4ad potRead.o
+ .stabstr       0x0000000000000000      0x485 potRead.o
 
 .stab.excl
  *(.stab.excl)
@@ -556,8 +556,8 @@ END GROUP
  *(.comment)
  .comment       0x0000000000000000       0x12 potRead.o
                                          0x13 (size before relaxing)
- .comment       0x0000000000000012       0x13 /home/olsport/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library/USART.o
  .comment       0x0000000000000012       0x13 lib/myADC.o
+ .comment       0x0000000000000012       0x13 lib/USART.o
 
 .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x40
@@ -628,10 +628,28 @@ END GROUP
 .debug_ranges
  *(.debug_ranges)
 
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
 .debug_macro
  *(.debug_macro)
 
-.debug_addr
- *(.debug_addr)
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
 OUTPUT(attempt2.elf elf32-avr)
 LOAD linker stubs

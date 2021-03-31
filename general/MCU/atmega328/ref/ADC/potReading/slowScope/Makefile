@@ -5,14 +5,14 @@
 ##########------------------------------------------------------##########
 
 MCU   = atmega328p
-F_CPU = 16000000UL  
+F_CPU = 1000000UL  
 BAUD  = 9600UL
 ## Also try BAUD = 19200 or 38400 if you're feeling lucky.
 
 ## A directory for common include files and the simple USART library.
 ## If you move either the current folder or the Library folder, you'll 
 ##  need to change this path to match.
-LIBDIR = ~/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library
+LIBDIR = ../../AVR-Programming-Library
 
 ##########------------------------------------------------------##########
 ##########                 Programmer Defaults                  ##########
@@ -22,7 +22,7 @@ LIBDIR = ~/Programs/Microcontrollers/AVR/lib/AVR-Programming-Library
 
 PROGRAMMER_TYPE = usbasp
 # extra arguments to avrdude: baud rate, chip type, -F flag, etc.
-PROGRAMMER_ARGS = -p m328p 	
+PROGRAMMER_ARGS = -p m328 -B 32	
 
 ##########------------------------------------------------------##########
 ##########                  Program Locations                   ##########
@@ -52,7 +52,7 @@ TARGET = $(lastword $(subst /, ,$(CURDIR)))
 # Object files: will find all .c/.h files in current directory
 #  and in LIBDIR.  If you have any other (sub-)directories with code,
 #  you can add them in to SOURCES below in the wildcard statement.
-SOURCES=$(wildcard *.c $(LIBDIR)/*.c $(LIBDIR)/*.h lib/*.c lib/*.h)
+SOURCES=$(wildcard *.c $(LIBDIR)/*.c)
 OBJECTS=$(SOURCES:.c=.o)
 HEADERS=$(SOURCES:.c=.h)
 

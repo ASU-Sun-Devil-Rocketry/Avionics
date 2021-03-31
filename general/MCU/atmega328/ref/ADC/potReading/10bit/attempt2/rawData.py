@@ -19,7 +19,7 @@ def serialMonitor(serialPort):
 # Main code 
 if __name__ == "__main__":
 
-   PORT = '/dev/ttyUSB1'
+   PORT = '/dev/ttyUSB0'
    BAUDRATE = 9600
    TIMEOUT = 5
 

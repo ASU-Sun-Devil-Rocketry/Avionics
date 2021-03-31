@@ -29,4 +29,5 @@ if __name__ == "__main__":
 
    serialPort = serial.Serial(PORT, BAUDRATE, TIMEOUT) 
    serialPort.flush()
+   print("Atmega328 Serial Monitor: ADC 10 bit readings")
    serialMonitor(serialPort)

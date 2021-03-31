@@ -7,7 +7,7 @@
 #ifndef BAUD                          /* if not defined in Makefile... */
 #define BAUD  9600                     /* set a safe default baud rate */
 #endif
- #include<avr/io.h>
+#include<avr/io.h>
 #include <stdint.h>
 #include <inttypes.h>
                                   /* These are defined for convenience */

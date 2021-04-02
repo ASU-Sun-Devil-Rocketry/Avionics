@@ -8877,24 +8877,25 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.3048" drill="0.508">
+<clearance class="0" value="0.254"/>
 </class>
 </classes>
 <parts>
-<part name="U1" library="LM317AEMP_NOPB" deviceset="LM317AEMP/NOPB" device=""/>
+<part name="VREG+" library="LM317AEMP_NOPB" deviceset="LM317AEMP/NOPB" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="240"/>
-<part name="VR1" library="ST4ETB502" deviceset="ST4ETB502" device=""/>
+<part name="VR+" library="ST4ETB502" deviceset="ST4ETB502" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U2" library="LM337IMP_NOPB" deviceset="LM337IMP/NOPB" device=""/>
+<part name="VREG-" library="LM337IMP_NOPB" deviceset="LM337IMP/NOPB" device=""/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="120"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="VR2" library="ST4ETB502" deviceset="ST4ETB502" device=""/>
+<part name="VR-" library="ST4ETB502" deviceset="ST4ETB502" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P-1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V-" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8910,8 +8911,8 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <part name="AR2-" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="AR2+" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="AR3-" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
-<part name="U3" library="OpAmpADA4177-4" deviceset="ADA4177-4ARZ-R7" device="R_14_ADI-M"/>
-<part name="VR3" library="ST4ETB502" deviceset="ST4ETB502" device=""/>
+<part name="OP_AMPS" library="OpAmpADA4177-4" deviceset="ADA4177-4ARZ-R7" device="R_14_ADI-M"/>
+<part name="VRAMP" library="ST4ETB502" deviceset="ST4ETB502" device=""/>
 <part name="AR3+" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
@@ -8924,7 +8925,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="A" x="60.96" y="76.2" smashed="yes">
+<instance part="VREG+" gate="A" x="60.96" y="76.2" smashed="yes">
 <attribute name="NAME" x="48.26" y="82.28" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="48.26" y="67.12" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
@@ -8940,7 +8941,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <attribute name="NAME" x="77.2414" y="59.69" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="82.042" y="59.69" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="VR1" gate="G$1" x="81.28" y="55.88" smashed="yes" rot="R270">
+<instance part="VR+" gate="G$1" x="81.28" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="88.9" y="39.37" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="86.36" y="39.37" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
@@ -8956,7 +8957,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <instance part="GND3" gate="1" x="91.44" y="60.96" smashed="yes">
 <attribute name="VALUE" x="88.9" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="G$1" x="60.96" y="-20.32" smashed="yes">
+<instance part="VREG-" gate="G$1" x="60.96" y="-20.32" smashed="yes">
 <attribute name="NAME" x="48.26" y="-14.24" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="48.26" y="-29.4" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
@@ -8972,7 +8973,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <attribute name="NAME" x="97.536" y="-4.445" size="1.778" layer="95"/>
 <attribute name="VALUE" x="97.536" y="-11.811" size="1.778" layer="96"/>
 </instance>
-<instance part="VR2" gate="G$1" x="66.04" y="2.54" smashed="yes" rot="R90">
+<instance part="VR-" gate="G$1" x="66.04" y="2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.42" y="19.05" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="60.96" y="19.05" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
@@ -9027,11 +9028,11 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <attribute name="NAME" x="234.7214" y="46.99" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="239.522" y="46.99" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U3" gate="A" x="154.94" y="50.8" smashed="yes">
+<instance part="OP_AMPS" gate="A" x="154.94" y="50.8" smashed="yes">
 <attribute name="NAME" x="180.6956" y="59.9186" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="180.0606" y="57.3786" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="VR3" gate="G$1" x="111.76" y="25.4" smashed="yes" rot="R90">
+<instance part="VRAMP" gate="G$1" x="111.76" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="104.14" y="41.91" size="1.778" layer="95" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="106.68" y="41.91" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
@@ -9063,7 +9064,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="U1" gate="A" pin="INPUT"/>
+<pinref part="VREG+" gate="A" pin="INPUT"/>
 <wire x1="33.02" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="76.2" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
@@ -9083,7 +9084,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <wire x1="40.64" y1="53.34" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VR1" gate="G$1" pin="2"/>
+<pinref part="VR+" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9092,7 +9093,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <wire x1="91.44" y1="68.58" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VR2" gate="G$1" pin="2"/>
+<pinref part="VR-" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9144,7 +9145,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 </net>
 <net name="VREG+" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="OUTPUT"/>
+<pinref part="VREG+" gate="A" pin="OUTPUT"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="78.74" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
@@ -9154,7 +9155,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <label x="93.98" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="V+"/>
+<pinref part="OP_AMPS" gate="A" pin="V+"/>
 <wire x1="157.48" y1="30.48" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
 <label x="154.94" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -9167,11 +9168,11 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="ADJUST"/>
+<pinref part="VREG+" gate="A" pin="ADJUST"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="78.74" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="VR1" gate="G$1" pin="1"/>
+<pinref part="VR+" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="58.42" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 <junction x="78.74" y="58.42"/>
 </segment>
@@ -9179,7 +9180,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <net name="V-" class="0">
 <segment>
 <pinref part="P-1" gate="1" pin="V-"/>
-<pinref part="U2" gate="G$1" pin="VIN"/>
+<pinref part="VREG-" gate="G$1" pin="VIN"/>
 <wire x1="27.94" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="-17.78" x2="43.18" y2="-17.78" width="0.1524" layer="91"/>
@@ -9194,7 +9195,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 </net>
 <net name="VREG-" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="VOUT"/>
+<pinref part="VREG-" gate="G$1" pin="VOUT"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="-17.78" x2="78.74" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="-17.78" x2="78.74" y2="-17.78" width="0.1524" layer="91"/>
@@ -9204,7 +9205,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <label x="99.06" y="-17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="V-"/>
+<pinref part="OP_AMPS" gate="A" pin="V-"/>
 <wire x1="213.36" y1="30.48" x2="213.36" y2="22.86" width="0.1524" layer="91"/>
 <label x="210.82" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -9217,11 +9218,11 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="ADJ"/>
+<pinref part="VREG-" gate="G$1" pin="ADJ"/>
 <wire x1="43.18" y1="-22.86" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="-2.54" x2="68.58" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="VR2" gate="G$1" pin="1"/>
+<pinref part="VR-" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="-2.54" x2="78.74" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="2.54" x2="68.58" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="68.58" y="-2.54"/>
@@ -9230,7 +9231,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <net name="IN+" class="0">
 <segment>
 <label x="124.46" y="66.04" size="1.778" layer="95"/>
-<pinref part="U3" gate="A" pin="+IN_B"/>
+<pinref part="OP_AMPS" gate="A" pin="+IN_B"/>
 <wire x1="129.54" y1="76.2" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="73.66" x2="129.54" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="40.64" x2="157.48" y2="40.64" width="0.1524" layer="91"/>
@@ -9242,7 +9243,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <segment>
 <wire x1="132.08" y1="76.2" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
 <label x="134.62" y="66.04" size="1.778" layer="95"/>
-<pinref part="U3" gate="A" pin="+IN_A"/>
+<pinref part="OP_AMPS" gate="A" pin="+IN_A"/>
 <wire x1="132.08" y1="73.66" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="50.8" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="3"/>
@@ -9251,7 +9252,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="OUT_A"/>
+<pinref part="OP_AMPS" gate="A" pin="OUT_A"/>
 <wire x1="157.48" y1="45.72" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="AR1-" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="45.72" x2="134.62" y2="45.72" width="0.1524" layer="91"/>
@@ -9264,18 +9265,18 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <net name="N$6" class="0">
 <segment>
 <pinref part="AR1-" gate="G$1" pin="2"/>
-<pinref part="U3" gate="A" pin="-IN_A"/>
+<pinref part="OP_AMPS" gate="A" pin="-IN_A"/>
 <wire x1="124.46" y1="7.62" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
 <junction x="124.46" y="48.26"/>
-<pinref part="VR3" gate="G$1" pin="2"/>
+<pinref part="VRAMP" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="48.26" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="OUT_B"/>
+<pinref part="OP_AMPS" gate="A" pin="OUT_B"/>
 <wire x1="157.48" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="AR1+" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="35.56" x2="149.86" y2="17.78" width="0.1524" layer="91"/>
@@ -9287,11 +9288,11 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="-IN_B"/>
+<pinref part="OP_AMPS" gate="A" pin="-IN_B"/>
 <pinref part="AR1+" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="38.1" x2="157.48" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="7.62" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="VR3" gate="G$1" pin="1"/>
+<pinref part="VRAMP" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="25.4" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="25.4" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
 <junction x="139.7" y="25.4"/>
@@ -9301,7 +9302,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <segment>
 <pinref part="AR2+" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="17.78" x2="220.98" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U3" gate="A" pin="+IN_C"/>
+<pinref part="OP_AMPS" gate="A" pin="+IN_C"/>
 <wire x1="213.36" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="50.8" x2="220.98" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="17.78" x2="236.22" y2="17.78" width="0.1524" layer="91"/>
@@ -9314,7 +9315,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 <segment>
 <pinref part="AR2-" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="71.12" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U3" gate="A" pin="-IN_C"/>
+<pinref part="OP_AMPS" gate="A" pin="-IN_C"/>
 <wire x1="213.36" y1="48.26" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="48.26" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="AR3-" gate="G$1" pin="2"/>
@@ -9325,7 +9326,7 @@ Source: &lt;a href="https://www.nidec-copal-electronics.com/e/catalog/trimmer/st
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="OUT_C"/>
+<pinref part="OP_AMPS" gate="A" pin="OUT_C"/>
 <wire x1="213.36" y1="45.72" x2="236.22" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="AR3-" gate="G$1" pin="1"/>
 <junction x="236.22" y="45.72"/>

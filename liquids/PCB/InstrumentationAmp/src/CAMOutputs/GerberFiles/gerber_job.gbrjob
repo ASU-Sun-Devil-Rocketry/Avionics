@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-04-02T23:17:25Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "InstrumentationAmplifier"
+        },
+        "Owner": "Colton Acosta <cacost12@asu.edu>",
+        "Size": {
+            "X": 58.4,
+            "Y": 47.93
+        }
+    }
+}

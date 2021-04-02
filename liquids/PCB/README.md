@@ -1,6 +1,6 @@
 <h1>Liquids Directory for PCB files</h1>
 
-Working Directory Structure:
+<u>Working Directory Structure:</u>
    
    doc: Documentation and data sheets
    

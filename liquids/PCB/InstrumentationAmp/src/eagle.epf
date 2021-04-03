@@ -1,6 +1,6 @@
 [Eagle]
 Version="09 06 02"
-Platform="Windows"
+Platform="Linux"
 Globals="Globals"
 Desktop="Desktop"
 
@@ -265,16 +265,11 @@ UsedLibraryUrn="urn:adsk.eagle:library:196"
 UsedLibraryUrn="urn:adsk.eagle:library:197"
 UsedLibraryUrn="urn:adsk.eagle:library:198"
 UsedLibraryUrn="urn:adsk.eagle:library:199"
-UsedLibrary="C:/Users/colto/OneDrive/Documents/EAGLE/libraries/ArduinoNanoV30.lbr"
-UsedLibrary="C:/Users/colto/OneDrive/Documents/EAGLE/libraries/LM317AEMP_NOPB.lbr"
-UsedLibrary="C:/Users/colto/OneDrive/Documents/EAGLE/libraries/ST4ETB502.lbr"
-UsedLibrary="C:/Users/colto/OneDrive/Documents/EAGLE/libraries/LM337IMP_NOPB.lbr"
-UsedLibrary="C:/Users/colto/OneDrive/Documents/EAGLE/libraries/OpAmpADA4177-4.lbr"
 
 [Win_1]
 Type="Control Panel"
 Number=0
 
 [Desktop]
-Screen="5760 1188"
+Screen="5760 1080"
 Window="Win_1"

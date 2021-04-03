@@ -90,6 +90,8 @@
 <text x="36.068" y="38.608" size="1.016" layer="21" rot="R90">IN-</text>
 <text x="52.832" y="27.432" size="1.016" layer="21" rot="R180">GND</text>
 <text x="52.832" y="24.384" size="1.016" layer="21" rot="R180">Vout</text>
+<dimension x1="0" y1="48.006" x2="58.293" y2="47.879" x3="29.148940625" y3="49.06253125" textsize="1.778" layer="21"/>
+<dimension x1="58.547" y1="0.127" x2="58.547" y2="48.006" x3="74.168" y3="24.0665" textsize="1.778" layer="21"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
